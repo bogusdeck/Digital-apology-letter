@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I am SORRY</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/lnu1fpi.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>document.documentElement.className = "js";</script>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .heading {
+            font-size: 3rem; /* Adjust the font size as needed */
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        body {
+            position: relative;
+            overflow: auto;
+        }
+
+        #videoContainer {
+            position: relative;
+            width: 640px;
+            height: 360px;
+            cursor: pointer;
+        }
+
+        #myVideo {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        #bgFill {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background-color: #C6BC44;
+            z-index: -1;
+            transition: height 1s ease-in-out;
+        }
+
+        .section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        @keyframes wave {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(-25%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .wave {
+            position: absolute;
+            top: -50px; /* Adjust to position the wave correctly */
+            left: 0;
+            width: 200%;
+            height: 100px;
+            background: rgba(198, 188, 68, 0.5); /* Match the fill color */
+            opacity: 0.7;
+            border-radius: 50%;
+            animation: wave 4s infinite linear;
+        }
+
+        .wave.wave1 {
+            animation-delay: 0s;
+            opacity: 1;
+        }
+
+        .wave.wave2 {
+            animation-delay: -2s;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+
+    <div id="bgFill">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+    </div>
+
+    <div id="section1" class="section flex items-center justify-center">
+        <div id="videoContainer" class="flex items-center justify-center rounded-md">
+            <video id="myVideo" preload="auto" onclick="playVideo()" class="flex items-center justify-center rounded-md">
+                <source src="poo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <section class="content" id="section2">
+        <h1 class="heading">I M REALLY SORRY</h1>
+        <div class="blur-text blur-text--3" data-effect-3>
+            These judgments are the tools of his daily being and yet they are his judgments, not on a basis of research and logical deduction, but for the most part dogmatic expressions accepted on the authority of his parents, his teachers, his church, and of his social, his economic and other leaders.
+        </div>
+        <div class="blur-text blur-text--3" data-effect-3>
+            These judgments are the tools of his daily being and yet they are his judgments, not on a basis of research and logical deduction, but for the most part dogmatic expressions accepted on the authority of his parents, his teachers, his church, and of his social, his economic and other leaders.
+        </div>
+    </section>
+
+    <script>
+        var video = document.getElementById("myVideo");
+        var bgFill = document.getElementById("bgFill");
+
+        function playVideo() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+
+            video.onended = function () {
+                video.currentTime = 0;
+                video.pause();
+            };
+
+            // Animate background fill from the bottom
+            bgFill.style.height = '50vh';
+
+            // Scroll to reveal the content after 1 second
+            setTimeout(function () {
+                document.getElementById('section2').scrollIntoView({ behavior: 'smooth' });
+            }, 1000);
+        }
+
+        // Remove controls
+        video.removeAttribute("controls");
+
+        // Scroll to top on page load
+        window.addEventListener('load', function () {
+            window.scrollTo(0, 0);
+        });
+
+        // Prevent scroll restoration
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+
+        // Add scroll event listener to fill background with white color when scrolling content
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > window.innerHeight / 2) {
+                bgFill.style.backgroundColor = '#C6BC44';
+            } else {
+                bgFill.style.backgroundColor = '#C6BC44';
+            }
+        });
+    </script>
+    <!-- JavaScript dependencies -->
+    <!-- GSAP library -->
+    <script src="js/gsap.min.js"></script>
+    <!-- GSAP ScrollTrigger plugin -->
+    <script src="js/ScrollTrigger.min.js"></script>
+
+    <!-- SplitType for text manipulation: https://github.com/lukePeavey/SplitType -->
+    <script src="js/split-type.min.js"></script>
+
+    <!-- Add (Lenis) smooth scroll -->
+    <script src="js/lenis.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+
+    <!-- Scripts for the effect -->
+    <script type="module" src="js/index.js"></script>
+
+</body>
+
+</html>

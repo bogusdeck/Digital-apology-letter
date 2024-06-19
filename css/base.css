@@ -1,0 +1,78 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+    --color-text: rgb(227 226 220 / 86%);
+    --color-bg: #000;
+    --color-link: rgb(227 226 220 / 86%);
+    --color-link-hover: rgb(227 226 220 / 100%);
+    --page-padding: 1.5rem;
+}
+
+body {
+    margin: 0;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    font-family: "scale-variable", -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+    font-variation-settings: "wght" 400, "wdth" 100;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: url(../img/noise.png);
+    background-size: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.type-small {
+    font-size: 13px;
+    font-family: "iki-mono-variable", sans-serif;
+    font-variation-settings: "wdth" 100, "wght" 300;
+    text-transform: uppercase;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    background-color: #000;
+    padding: var(--page-padding);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.blur-text {
+    width: 100%;
+    line-height: 1.2;
+    font-family: "instrument-sans-variable", sans-serif;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    color: var(--color-text);
+    margin: 1rem 0;
+}
+
+.blur-text--1 {
+    font-variation-settings: "wght" 420, "wdth" 100;
+    letter-spacing: -0.05em;
+}
+
+.blur-text--2 {
+    font-family: "iki-mono-variable", sans-serif;
+    font-variation-settings: "wdth" 80, "wght" 300;
+}
+
+.blur-text--3 {
+    font-variation-settings: "wght" 600, "wdth" 100;
+    letter-spacing: -0.05em;
+}
+
+.blur-text--4 {
+    font-variation-settings: "wght" 400, "wdth" 95;
+    letter-spacing: -0.05em;
+}
