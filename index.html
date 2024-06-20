@@ -33,18 +33,6 @@
             overflow: auto;
         }
 
-        #videoContainer {
-            position: relative;
-            width: 640px;
-            height: 360px;
-            cursor: pointer;
-        }
-
-        #myVideo {
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
 
         #bgFill {
             position: fixed;
@@ -113,7 +101,7 @@
     </div>
 
     <div id="section1" class="section flex flex-col items-center justify-center">
-        <img src="assests/text.png" alt="poke me" class="mb-10">
+        <img src="assests/text.png" alt="poke me" class="mb-10 w-3/6 md:w-1/6 flex item-center justify-center">
         <div id="videoContainer" class="flex items-center justify-center rounded-md">
             <video id="myVideo" preload="auto" onclick="playVideo()"
                 class="flex items-center justify-center rounded-md">
@@ -124,8 +112,21 @@
     </div>
 
     <section class="content" id="section2">
-        <div class="flex flex-col items-center justify-center bg-black p-10 rounded-xl">
-            <h1 class="playful" aria-label="I am sorry">
+        <div class="flex flex-col items-center justify-center bg-black p-4  md:p-10 rounded-xl">
+            <h1 class="playful hidden md:block" aria-label="I am sorry">
+                <span aria-hidden="true">I</span>
+                <span aria-hidden="true"> </span>
+                <span aria-hidden="true"> </span>
+                <span aria-hidden="true">M</span>
+                <span aria-hidden="true"> </span>
+                <span aria-hidden="true">S</span>
+                <span aria-hidden="true">O</span>
+                <span aria-hidden="true">R</span>
+                <span aria-hidden="true">R</span>
+                <span aria-hidden="true">Y</span>
+                <span aria-hidden="true">!</span>
+            </h1>
+            <h1 class="playful block md:hidden flex flex-col" aria-label="I am sorry">
                 <span aria-hidden="true">I</span>
                 <span aria-hidden="true"> </span>
                 <span aria-hidden="true"> </span>
