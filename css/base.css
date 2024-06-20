@@ -232,7 +232,7 @@ a:focus-visible {
 }
 
 .blur-text {
-	width: 70vw;
+	width: 80vw;
 	max-width: 1000px;
 	min-width: 300px;
 	line-height: 1.2;

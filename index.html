@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I am SORRY</title>
+    <link rel="shortcut icon" href="favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/lnu1fpi.css">
     <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>document.documentElement.className = "js";</script>
     <style>
@@ -18,7 +21,8 @@
         }
 
         .heading {
-            font-size: 3rem; /* Adjust the font size as needed */
+            font-size: 3rem;
+            /* Adjust the font size as needed */
             font-weight: bold;
             text-align: center;
             margin-bottom: 1rem;
@@ -65,9 +69,11 @@
             0% {
                 transform: translateX(0);
             }
+
             50% {
                 transform: translateX(-25%);
             }
+
             100% {
                 transform: translateX(0);
             }
@@ -75,11 +81,13 @@
 
         .wave {
             position: absolute;
-            top: -50px; /* Adjust to position the wave correctly */
+            top: -50px;
+            /* Adjust to position the wave correctly */
             left: 0;
             width: 200%;
             height: 100px;
-            background: rgba(198, 188, 68, 0.5); /* Match the fill color */
+            background: rgba(198, 188, 68, 0.5);
+            /* Match the fill color */
             opacity: 0.7;
             border-radius: 50%;
             animation: wave 4s infinite linear;
@@ -94,8 +102,6 @@
             animation-delay: -2s;
             opacity: 0.5;
         }
-        
-
     </style>
 </head>
 
@@ -106,9 +112,11 @@
         <div class="wave wave2"></div>
     </div>
 
-    <div id="section1" class="section flex items-center justify-center">
+    <div id="section1" class="section flex flex-col items-center justify-center">
+        <img src="text.png" alt="poke me" class="mb-10">
         <div id="videoContainer" class="flex items-center justify-center rounded-md">
-            <video id="myVideo" preload="auto" onclick="playVideo()" class="flex items-center justify-center rounded-md">
+            <video id="myVideo" preload="auto" onclick="playVideo()"
+                class="flex items-center justify-center rounded-md">
                 <source src="poo.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -117,20 +125,72 @@
 
     <section class="content" id="section2">
         <div class="flex flex-col items-center justify-center bg-black p-10 rounded-xl">
+            <h1 class="playful" aria-label="I am sorry">
+                <span aria-hidden="true">I</span>
+                <span aria-hidden="true"> </span>
+                <span aria-hidden="true"> </span>
+                <span aria-hidden="true">M</span>
+                <span aria-hidden="true"> </span>
+                <span aria-hidden="true">S</span>
+                <span aria-hidden="true">O</span>
+                <span aria-hidden="true">R</span>
+                <span aria-hidden="true">R</span>
+                <span aria-hidden="true">Y</span>
+                <span aria-hidden="true">!</span>
+            </h1>
+            <div class="min-h-screen flex flex-col items-center justify-center">
+                <h1 class="heading flex items-center justify-center animate-pulse"> I M REALLY SORRY</h1>
+                <img src="penggu.gif" class="mb-52" alt="akriti" onclick="thisisyou()">
+            </div>
+            <div class="blur-text blur-text--2" data-effect-2>
+                Oui love! I m writing this letter to have a proper apologies for all the hard stuff u have to go through
+                because of me…since past few months lots of things are tough for us. Really a roller coaster of emotions
+                kabhi hum itna haste ki control nhi hua or kbhi hum itna ldee ki kuch bhi bol diya ….. i m sorry maine
+                tre sae promise kra tha ki mai trko rone nhi dunga pr maine trko bhut rulaya …..ulta sidha bola
+            </div>
+            <div class="blur-text blur-text--2 mt-10" data-effect-2>
+                But niggu, i never mean those things …even agr mai trko biharan bolta na tho wo biharan bhi cute hota
+                kuki i love my biharan ….tu jo bhi hai jaisi bhi hai tu meri hai ….always …i know u love me i know
+                everything….. tre sath life bitani hai merko niggu tre sath family bnani hai merko …tu humesha merko
+                power nd strength deti …. Nd lately itni sari ldiyo mai na ek hi chiz best hui ki mai trko pglo ki trha
+                miss krne lga hu …bhut bura wala Sachi…..tri sari photos bar bar dekhna notea snap dekhna humara first
+                meet buddy un sab ko dekhte hur sirf ek hi chiz mere dimag sae niklti ki dayumm i love this girl so bad
+                …u make me blush u know ….mai bhut proud hu tre upr ki itne career challenge k baad bhi meri niggu itni
+                pdhai krti sabko btata firta ….jisdin tu engineer bn jygi na bhai baakiyo ka tho pta nhi pr mai tho
+                bawali gend bn jaunga for real ….merko humesha sae tri jaisi partner hi chiye thi….. tho khud soch mai
+                ku chorunga trko ? Ofc nhi ….
+                i love the every inch of u ….. every thing u touch
+            </div>
+            <div class="mt-3 font-bold">i love the every inch of u ….. every thing u touch</div>
+            <div class="blur-text blur-text--2 mt-10" data-effect-2>
+                Han manta hu trko datata hu mai kaafi bar yh wo bolta rheta hu ... pr babe i really love to tease you with my heart
+                i know tu thoda clumsy hai i admit that and mai janata hu ki tu usko theek kr rha hai mere liye i love you for that babe mera dil sae trko bhut sara pyr krne ka maan kr rha truly tre alawa kisi or ko nhi dekhta mai trko kuch krne k liye ulti sidhi chize krta ....han mai manta hu mai tre sae gussa hota pr is puri duniya mai mera gussa shaant bhi tho sirf tu hi kr skti hai please us time pr merko shnt kr diya kr pyr sae gussa mat hua kro ap mere sae please....
+            </div>
 
-            <h1 class="heading">I M REALLY SORRY</h1>
-            <div class="blur-text blur-text--3" data-effect-3>
-                These judgments are the tools of his daily being and yet they are his judgments, not on a basis of research and logical deduction, but for the most part dogmatic expressions accepted on the authority of his parents, his teachers, his church, and of his social, his economic and other leaders.
+            <div class="blur-text blur-text--2 mt-10 mb-30" data-effect-2>
+                bakki tho ab ap aram sae mananli ki snow mai enjoy kro.... me waiting here for you and missing you 
             </div>
-            <div class="blur-text blur-text--3" data-effect-3>
-                These judgments are the tools of his daily being and yet they are his judgments, not on a basis of research and logical deduction, but for the most part dogmatic expressions accepted on the authority of his parents, his teachers, his church, and of his social, his economic and other leaders.
+
+            <div class="mt-10 mb-30 flex flex-col item-center justify-center">
+                <img src="cat.jpeg" alt="us" class=" rounded-xl w-52 h-52" onclick="heheh()">
             </div>
-        </div>
+            <div class="text-center mt-4">You are my kittyyyy kitty catty cattyyyyyyyy</div>
+
+            <div class="mt-10 mb-30 flex flex-col item-center justify-center">
+                <img src="couple.png" alt="marryme" class=" rounded-xl w-64 h-64" onclick="showAlert()">
+            </div>
+            <div class="text-center mt-4">made with love</div>
+
+        </div>  
     </section>
+    <audio id="soundEffect" src="fart-107648.mp3"></audio>
+    <audio id="bgmMusic" src="bgmlyrics.mp3" loop></audio>
 
     <script>
         var video = document.getElementById("myVideo");
         var bgFill = document.getElementById("bgFill");
+        var soundEffect = document.getElementById("soundEffect");
+        var bgmMusic = document.getElementById("bgmMusic");
 
         function playVideo() {
             if (video.paused) {
@@ -144,6 +204,7 @@
                 video.pause();
             };
 
+            soundEffect.play();
             // Animate background fill from the bottom
             bgFill.style.height = '50vh';
 
@@ -151,6 +212,7 @@
             setTimeout(function () {
                 document.getElementById('section2').scrollIntoView({ behavior: 'smooth' });
             }, 1000);
+            bgmMusic.play();
         }
 
         // Remove controls
@@ -174,6 +236,18 @@
                 bgFill.style.backgroundColor = '#C6BC44';
             }
         });
+
+        function showAlert() {
+            alert("Send Notea Snaps ASAP!!");
+        }
+
+        function heheh() {
+            alert("yh mai or pari hai! CHL ht");
+        }
+
+        function thisisyou() {
+            alert("awlellelele meri penguin smile kr rhi heheh")
+        }
     </script>
     <!-- JavaScript dependencies -->
     <!-- GSAP library -->
